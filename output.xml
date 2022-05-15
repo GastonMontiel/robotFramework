@@ -1,100 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220512 19:48:45.411" rpa="false" schemaversion="3">
-<suite id="s1" name="Robotfw" source="C:\Users\These\Desktop\robotfw">
-<suite id="s1-s1" name="Test" source="C:\Users\These\Desktop\robotfw\test">
-<suite id="s1-s1-s1" name="File" source="C:\Users\These\Desktop\robotfw\test\file.robot">
-<test id="s1-s1-s1-t1" name=" Test file Site" line="10">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220515 16:37:06.459" rpa="false" schemaversion="3">
+<suite id="s1" name="robotFramework" source="C:\Users\Gaston\Desktop\robot\robotFramework">
+<suite id="s1-s1" name="Test" source="C:\Users\Gaston\Desktop\robot\robotFramework\test">
+<suite id="s1-s1-s1" name="File" source="C:\Users\Gaston\Desktop\robot\robotFramework\test\file.robot">
+<test id="s1-s1-s1-t1" name=" Test file Site" line="12">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://www.google.com/</arg>
+<arg>https://configuraciones.antel.com.uy/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220512 19:48:45.719" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
-<status status="PASS" starttime="20220512 19:48:45.718" endtime="20220512 19:48:48.036"/>
+<msg timestamp="20220515 16:37:06.695" level="INFO">Opening browser 'chrome' to base url 'https://configuraciones.antel.com.uy/'.</msg>
+<status status="PASS" starttime="20220515 16:37:06.694" endtime="20220515 16:37:11.003"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>css:a[href="/marca/Apple"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220515 16:37:11.004" level="INFO">Clicking link 'css:a[href="/marca/Apple"]'.</msg>
+<status status="PASS" starttime="20220515 16:37:11.003" endtime="20220515 16:37:13.312"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>css:input[aria-label='Me siento con suerte ']</arg>
+<arg>css:a[href="/marca/Apple/modelo/iPhone+13+Pro+Max+%28256GB%29"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220512 19:48:48.039" level="INFO">Clicking element 'css:input[aria-label='Me siento con suerte ']'.</msg>
-<msg timestamp="20220512 19:48:48.253" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220512 19:48:48.254" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=101.0.4951.67)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x011FB8F3+2406643]
-	Ordinal0 [0x0118AF31+1945393]
-	Ordinal0 [0x0107C610+837136]
-	Ordinal0 [0x010AA2D3+1024723]
-	Ordinal0 [0x010A0083+983171]
-	Ordinal0 [0x010C427C+1131132]
-	Ordinal0 [0x0109FA64+981604]
-	Ordinal0 [0x010C4494+1131668]
-	Ordinal0 [0x010D4682+1197698]
-	Ordinal0 [0x010C4096+1130646]
-	Ordinal0 [0x0109E636+976438]
-	Ordinal0 [0x0109F546+980294]
-	GetHandleVerifier [0x01469612+2498066]
-	GetHandleVerifier [0x0145C920+2445600]
-	GetHandleVerifier [0x01294F2A+579370]
-	GetHandleVerifier [0x01293D36+574774]
-	Ordinal0 [0x01191C0B+1973259]
-	Ordinal0 [0x01196688+1992328]
-	Ordinal0 [0x01196775+1992565]
-	Ordinal0 [0x0119F8D1+2029777]
-	BaseThreadInitThunk [0x7798FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x77D47A7E+286]
-	RtlGetAppContainerNamedObjectPath [0x77D47A4E+238]
-</msg>
-<status status="FAIL" starttime="20220512 19:48:48.038" endtime="20220512 19:48:48.259"/>
+<msg timestamp="20220515 16:37:13.313" level="INFO">Clicking element 'css:a[href="/marca/Apple/modelo/iPhone+13+Pro+Max+%28256GB%29"]'.</msg>
+<status status="PASS" starttime="20220515 16:37:13.313" endtime="20220515 16:37:15.389"/>
 </kw>
-<doc>Test1- Open google in browser</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div#celda5</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220515 16:37:15.390" level="INFO">Clicking element 'css:div#celda5'.</msg>
+<status status="PASS" starttime="20220515 16:37:15.390" endtime="20220515 16:37:15.486"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:li[id="Configura+Internet+%28Prepago%29."]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220515 16:37:15.491" level="INFO">Clicking element 'css:li[id="Configura+Internet+%28Prepago%29."]'.</msg>
+<status status="PASS" starttime="20220515 16:37:15.490" endtime="20220515 16:37:15.562"/>
+</kw>
+<while condition="True" limit="4">
+<iter>
+<if>
+<branch type="IF" condition="Element Should Be Enabled">
+<kw name="css:button#btn_siguiente">
+<arg>Execute JavaScript</arg>
+<arg>console.log(${x});</arg>
+<status status="NOT RUN" starttime="20220515 16:37:15.568" endtime="20220515 16:37:15.568"/>
+</kw>
+<msg timestamp="20220515 16:37:15.568" level="FAIL">Evaluating IF condition failed: Evaluating expression 'Element Should Be Enabled' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
+<status status="FAIL" starttime="20220515 16:37:15.565" endtime="20220515 16:37:15.568"/>
+</branch>
+<status status="FAIL" starttime="20220515 16:37:15.565" endtime="20220515 16:37:15.568"/>
+</if>
+<status status="FAIL" starttime="20220515 16:37:15.564" endtime="20220515 16:37:15.568"/>
+</iter>
+<status status="FAIL" starttime="20220515 16:37:15.564" endtime="20220515 16:37:15.568"/>
+</while>
+<doc>Test1- Open antel in browser</doc>
 <tag>Smoke</tag>
-<status status="FAIL" starttime="20220512 19:48:45.717" endtime="20220512 19:48:48.263">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=101.0.4951.67)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x011FB8F3+2406643]
-	Ordinal0 [0x0118AF31+1945393]
-	Ordinal0 [0x0107C610+837136]
-	Ordinal0 [0x010AA2D3+1024723]
-	Ordinal0 [0x010A0083+983171]
-	Ordinal0 [0x010C427C+1131132]
-	Ordinal0 [0x0109FA64+981604]
-	Ordinal0 [0x010C4494+1131668]
-	Ordinal0 [0x010D4682+1197698]
-	Ordinal0 [0x010C4096+1130646]
-	Ordinal0 [0x0109E636+976438]
-	Ordinal0 [0x0109F546+980294]
-	GetHandleVerifier [0x01469612+2498066]
-	GetHandleVerifier [0x0145C920+2445600]
-	GetHandleVerifier [0x01294F2A+579370]
-	GetHandleVerifier [0x01293D36+574774]
-	Ordinal0 [0x01191C0B+1973259]
-	Ordinal0 [0x01196688+1992328]
-	Ordinal0 [0x01196775+1992565]
-	Ordinal0 [0x0119F8D1+2029777]
-	BaseThreadInitThunk [0x7798FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x77D47A7E+286]
-	RtlGetAppContainerNamedObjectPath [0x77D47A4E+238]
-</status>
+<status status="FAIL" starttime="20220515 16:37:06.693" endtime="20220515 16:37:15.569">Evaluating IF condition failed: Evaluating expression 'Element Should Be Enabled' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+</test>
+<test id="s1-s1-s1-t2" name="${Status}=" line="28">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<arg>Element Should be Enabled</arg>
+<arg>id=dropdown</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>id=dropdown</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<msg timestamp="20220515 16:37:15.588" level="FAIL">Element with locator 'id=dropdown' not found.</msg>
+<status status="FAIL" starttime="20220515 16:37:15.571" endtime="20220515 16:37:15.592"/>
+</kw>
+<status status="PASS" starttime="20220515 16:37:15.571" endtime="20220515 16:37:15.592"/>
+</kw>
+<status status="PASS" starttime="20220515 16:37:15.571" endtime="20220515 16:37:15.593"/>
+</test>
+<test id="s1-s1-s1-t3" name="Run Keyword If" line="29">
+<kw name="'${Status}'=='True'">
+<arg>Click Element</arg>
+<arg>id=dropdown</arg>
+<msg timestamp="20220515 16:37:15.599" level="FAIL">No keyword with name ''${Status}'=='True'' found.</msg>
+<status status="FAIL" starttime="20220515 16:37:15.599" endtime="20220515 16:37:15.599"/>
+</kw>
+<status status="FAIL" starttime="20220515 16:37:15.594" endtime="20220515 16:37:15.600">No keyword with name ''${Status}'=='True'' found.</status>
 </test>
 <doc>This is test script</doc>
-<status status="FAIL" starttime="20220512 19:48:45.444" endtime="20220512 19:48:48.274"/>
+<status status="FAIL" starttime="20220515 16:37:06.485" endtime="20220515 16:37:15.601"/>
 </suite>
-<status status="FAIL" starttime="20220512 19:48:45.439" endtime="20220512 19:48:48.281"/>
+<status status="FAIL" starttime="20220515 16:37:06.483" endtime="20220515 16:37:15.603"/>
 </suite>
-<status status="FAIL" starttime="20220512 19:48:45.413" endtime="20220512 19:48:48.286"/>
+<status status="FAIL" starttime="20220515 16:37:06.461" endtime="20220515 16:37:15.605"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="0" fail="1" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Robotfw">Robotfw</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test">Robotfw.Test</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="File">Robotfw.Test.File</stat>
+<stat pass="1" fail="2" skip="0" id="s1" name="robotFramework">robotFramework</stat>
+<stat pass="1" fail="2" skip="0" id="s1-s1" name="Test">robotFramework.Test</stat>
+<stat pass="1" fail="2" skip="0" id="s1-s1-s1" name="File">robotFramework.Test.File</stat>
 </suite>
 </statistics>
 <errors>

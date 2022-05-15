@@ -1,0 +1,10 @@
+python y agregarlo a las variables de entorno de win
+
+-----instalar robot framework-----
+pip install robotframework
+
+Descargar chromedriver y agregarlo al path o raiz del proyecto
+
+------isntalar libreria selenium ------
+pip install --upgrade robotframework-seleniumlibrary
+
