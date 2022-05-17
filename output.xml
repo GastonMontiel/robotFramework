@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220515 16:37:06.459" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220516 21:06:27.915" rpa="false" schemaversion="3">
 <suite id="s1" name="robotFramework" source="C:\Users\Gaston\Desktop\robot\robotFramework">
 <suite id="s1-s1" name="Test" source="C:\Users\Gaston\Desktop\robot\robotFramework\test">
 <suite id="s1-s1-s1" name="File" source="C:\Users\Gaston\Desktop\robot\robotFramework\test\file.robot">
@@ -8,97 +8,61 @@
 <arg>https://configuraciones.antel.com.uy/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220515 16:37:06.695" level="INFO">Opening browser 'chrome' to base url 'https://configuraciones.antel.com.uy/'.</msg>
-<status status="PASS" starttime="20220515 16:37:06.694" endtime="20220515 16:37:11.003"/>
+<msg timestamp="20220516 21:06:28.154" level="INFO">Opening browser 'chrome' to base url 'https://configuraciones.antel.com.uy/'.</msg>
+<status status="PASS" starttime="20220516 21:06:28.153" endtime="20220516 21:06:30.372"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
-<arg>css:a[href="/marca/Apple"]</arg>
+<arg>${MARCA_APPLE}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220515 16:37:11.004" level="INFO">Clicking link 'css:a[href="/marca/Apple"]'.</msg>
-<status status="PASS" starttime="20220515 16:37:11.003" endtime="20220515 16:37:13.312"/>
+<msg timestamp="20220516 21:06:30.372" level="INFO">Clicking link 'css:a[href='/marca/Apple']'.</msg>
+<status status="PASS" starttime="20220516 21:06:30.372" endtime="20220516 21:06:31.164"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>css:a[href="/marca/Apple/modelo/iPhone+13+Pro+Max+%28256GB%29"]</arg>
+<arg>${IPHONE_13}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220515 16:37:13.313" level="INFO">Clicking element 'css:a[href="/marca/Apple/modelo/iPhone+13+Pro+Max+%28256GB%29"]'.</msg>
-<status status="PASS" starttime="20220515 16:37:13.313" endtime="20220515 16:37:15.389"/>
+<msg timestamp="20220516 21:06:31.165" level="INFO">Clicking element 'css:a[href='/marca/Apple/modelo/iPhone+13+Pro+Max+%28256GB%29']'.</msg>
+<status status="PASS" starttime="20220516 21:06:31.164" endtime="20220516 21:06:32.120"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>css:div#celda5</arg>
+<arg>${CONF_INTERNET}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220515 16:37:15.390" level="INFO">Clicking element 'css:div#celda5'.</msg>
-<status status="PASS" starttime="20220515 16:37:15.390" endtime="20220515 16:37:15.486"/>
+<msg timestamp="20220516 21:06:32.121" level="INFO">Clicking element 'css:div#celda5'.</msg>
+<status status="PASS" starttime="20220516 21:06:32.120" endtime="20220516 21:06:32.181"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>css:li[id="Configura+Internet+%28Prepago%29."]</arg>
+<arg>${PREPAGO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220515 16:37:15.491" level="INFO">Clicking element 'css:li[id="Configura+Internet+%28Prepago%29."]'.</msg>
-<status status="PASS" starttime="20220515 16:37:15.490" endtime="20220515 16:37:15.562"/>
+<msg timestamp="20220516 21:06:32.183" level="INFO">Clicking element 'css:li[id='Configura+Internet+%28Prepago%29.']'.</msg>
+<status status="PASS" starttime="20220516 21:06:32.183" endtime="20220516 21:06:32.229"/>
 </kw>
-<while condition="True" limit="4">
-<iter>
-<if>
-<branch type="IF" condition="Element Should Be Enabled">
-<kw name="css:button#btn_siguiente">
-<arg>Execute JavaScript</arg>
-<arg>console.log(${x});</arg>
-<status status="NOT RUN" starttime="20220515 16:37:15.568" endtime="20220515 16:37:15.568"/>
+<kw name="Log" library="BuiltIn">
+<arg>${MARCA_APPLE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220516 21:06:32.230" level="INFO">css:a[href='/marca/Apple']</msg>
+<status status="PASS" starttime="20220516 21:06:32.229" endtime="20220516 21:06:32.230"/>
 </kw>
-<msg timestamp="20220515 16:37:15.568" level="FAIL">Evaluating IF condition failed: Evaluating expression 'Element Should Be Enabled' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
-<status status="FAIL" starttime="20220515 16:37:15.565" endtime="20220515 16:37:15.568"/>
-</branch>
-<status status="FAIL" starttime="20220515 16:37:15.565" endtime="20220515 16:37:15.568"/>
-</if>
-<status status="FAIL" starttime="20220515 16:37:15.564" endtime="20220515 16:37:15.568"/>
-</iter>
-<status status="FAIL" starttime="20220515 16:37:15.564" endtime="20220515 16:37:15.568"/>
-</while>
 <doc>Test1- Open antel in browser</doc>
 <tag>Smoke</tag>
-<status status="FAIL" starttime="20220515 16:37:06.693" endtime="20220515 16:37:15.569">Evaluating IF condition failed: Evaluating expression 'Element Should Be Enabled' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
-</test>
-<test id="s1-s1-s1-t2" name="${Status}=" line="28">
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<arg>Element Should be Enabled</arg>
-<arg>id=dropdown</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Element Should Be Enabled" library="SeleniumLibrary">
-<arg>id=dropdown</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<msg timestamp="20220515 16:37:15.588" level="FAIL">Element with locator 'id=dropdown' not found.</msg>
-<status status="FAIL" starttime="20220515 16:37:15.571" endtime="20220515 16:37:15.592"/>
-</kw>
-<status status="PASS" starttime="20220515 16:37:15.571" endtime="20220515 16:37:15.592"/>
-</kw>
-<status status="PASS" starttime="20220515 16:37:15.571" endtime="20220515 16:37:15.593"/>
-</test>
-<test id="s1-s1-s1-t3" name="Run Keyword If" line="29">
-<kw name="'${Status}'=='True'">
-<arg>Click Element</arg>
-<arg>id=dropdown</arg>
-<msg timestamp="20220515 16:37:15.599" level="FAIL">No keyword with name ''${Status}'=='True'' found.</msg>
-<status status="FAIL" starttime="20220515 16:37:15.599" endtime="20220515 16:37:15.599"/>
-</kw>
-<status status="FAIL" starttime="20220515 16:37:15.594" endtime="20220515 16:37:15.600">No keyword with name ''${Status}'=='True'' found.</status>
+<status status="PASS" starttime="20220516 21:06:28.153" endtime="20220516 21:06:32.230"/>
 </test>
 <doc>This is test script</doc>
-<status status="FAIL" starttime="20220515 16:37:06.485" endtime="20220515 16:37:15.601"/>
+<status status="PASS" starttime="20220516 21:06:27.943" endtime="20220516 21:06:32.231"/>
 </suite>
-<status status="FAIL" starttime="20220515 16:37:06.483" endtime="20220515 16:37:15.603"/>
+<status status="PASS" starttime="20220516 21:06:27.940" endtime="20220516 21:06:32.234"/>
 </suite>
-<status status="FAIL" starttime="20220515 16:37:06.461" endtime="20220515 16:37:15.605"/>
+<status status="PASS" starttime="20220516 21:06:27.916" endtime="20220516 21:06:32.236"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="2" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Smoke</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="1" fail="2" skip="0" id="s1" name="robotFramework">robotFramework</stat>
-<stat pass="1" fail="2" skip="0" id="s1-s1" name="Test">robotFramework.Test</stat>
-<stat pass="1" fail="2" skip="0" id="s1-s1-s1" name="File">robotFramework.Test.File</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="robotFramework">robotFramework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">robotFramework.Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="File">robotFramework.Test.File</stat>
 </suite>
 </statistics>
 <errors>

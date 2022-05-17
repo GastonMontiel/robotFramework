@@ -1,12 +1,5 @@
-class LoginPage():
-    
-    # Login Page locators
-    LoginUsernameInputBox ="css:"
-    LoginPasswordInputBox = "css:"
-    LoginButton = "css:"
 
-    # Home Page Locators
-    WelcomeText = "css:welcome"
-    LogoutButton = "css:[href='/index.php/auth/logout']"
-
-loginPage = LoginPage()
+MARCA_APPLE ="css:a[href='/marca/Apple']"
+IPHONE_13 = "css:a[href='/marca/Apple/modelo/iPhone+13+Pro+Max+%28256GB%29']"
+CONF_INTERNET = "css:div#celda5"
+PREPAGO = "css:li[id='Configura+Internet+%28Prepago%29.']"
